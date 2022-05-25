@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp-Web-App</title>
+     <link rel="stylesheet" href="Style.css">
+     
+</head>
+<body>
+    <div class="container">
+    <input type="number" id="Input">
+    <button id="Button1" onclick="e1()">Get by id</button>
+    </div> <br>
+
+    <button type="button" class="button1" onclick="allrec()">Get All Records</button> <br> <br> <br>
+    <button type="button" class="button1" onclick="e2()">Insert Record</button> <br><br>
+
+
+
+    <div class="open" id="insertrec">
+     <input class="id" type="text" placeholder="EmpID" id="empid">  
+     <input class="id" type="text" placeholder="fname " id="f">  
+     <input class="id" type="text" placeholder="Lname" id="l">  
+     <input class="id" type="text" placeholder="Department" id="d">
+     <input class="id" type="text" placeholder="Salary" id="s">
+     <input class="id" type="text" placeholder="City" id="c">
+
+     <button type="button" onclick="sendJSON()">Submit</button>
+    </div><br>
+    <button type="button" class="button1" onclick="expand3()">Search</button> <br><br>
+    <div  id="searchbtn">
+        <input class="" type="text" placeholder="Enter to Search" id="like123">
+        <button type="button" class="button1" onclick="show123()">Submit</button>
+       </div> 
+   
+    
+    
+</div>
+
+<div id="show">
+    
+</div>
+ <script src="app.js"></script>
+</body>
+</html>
